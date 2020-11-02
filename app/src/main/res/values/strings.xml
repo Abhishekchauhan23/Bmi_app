@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BMI App</string>
+    <string name="kget">KG</string>
+    <string name="pounds">pounds</string>
+    <string name="foot">Foot</string>
+    <string name="inch">Inch</string>
+    <string name="feet_inch">Feet_iNch</string>
+    <string name="cm">Cm</string>
+    <string name="kg">Kg</string>
+    <string name="msgEmpty">Enter The Weight and Height</string>
+</resources>

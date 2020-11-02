@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/main_constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/PoundET"
+            android:layout_width="92dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginBottom="26dp"
+            android:autofillHints=""
+            android:background="@drawable/editextbg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/pounds"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/KgET"
+            android:layout_width="92dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/editextbg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/kget"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/FootET"
+            android:layout_width="92dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/editextbg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/foot"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/PoundET"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/CmET"
+            android:layout_width="92dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/editextbg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/cm"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/PoundET"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/InchET"
+            android:layout_width="92dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="118dp"
+            android:background="@drawable/editextbg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/inch"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/FootET"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/Feet_InchButton"
+            android:layout_width="109dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/feet_inch"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/Kg_Button"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/Cm_Button"
+            android:layout_width="109dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/cm"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/Kg_Button"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/Kg_Button"
+            android:layout_width="109dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/kg"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/Pounds_Button"
+            android:layout_width="109dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/pounds"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/Bmilogo"
+            android:layout_width="177dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/bmilogo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/SecondView"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/VerdicttextView"
+            android:layout_width="230dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BmiOutputTextView" />
+
+        <TextView
+            android:id="@+id/BmiOutputTextView"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Text"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Save"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
